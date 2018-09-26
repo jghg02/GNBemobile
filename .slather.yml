@@ -1,0 +1,11 @@
+coverage_service: cobertura_xml
+scheme: GNBemobile
+xcodeproj: GNBemobile.xcodeproj
+workspace: GNBemobile.xcworkspace
+binary_basename: GNBemobile
+source_directory: GNBemobile
+output_directory: coverage
+ignore:
+ - ../**/*/Xcode*
+ - Example/*
+ - Pods/*

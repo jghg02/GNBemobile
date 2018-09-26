@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BAADE1921566D06009160F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE1821566D06009160F9 /* AppDelegate.swift */; };
+		6BAADE2021566D07009160F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAADE1F21566D07009160F9 /* Assets.xcassets */; };
+		6BAADE2321566D07009160F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAADE2121566D07009160F9 /* LaunchScreen.storyboard */; };
+		6BAADE2E21566D07009160F9 /* GNBemobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE2D21566D07009160F9 /* GNBemobileTests.swift */; };
+		6BAADE3B21566E33009160F9 /* GNBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE3921566E33009160F9 /* GNBMainViewController.swift */; };
+		6BAADE3C21566E33009160F9 /* GNBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAADE3A21566E33009160F9 /* GNBMainViewController.xib */; };
+		6BAADE42215675A8009160F9 /* GNBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE41215675A8009160F9 /* GNBServices.swift */; };
+		6BAADE4421567953009160F9 /* GNBPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE4321567953009160F9 /* GNBPresenter.swift */; };
+		6BAADE4621567A51009160F9 /* GNBProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE4521567A51009160F9 /* GNBProtocol.swift */; };
+		6BAADE4921567CE9009160F9 /* GNBRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE4821567CE9009160F9 /* GNBRates.swift */; };
+		6BAADE4E21572766009160F9 /* GNBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE4C21572766009160F9 /* GNBCell.swift */; };
+		6BAADE4F21572766009160F9 /* GNBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAADE4D21572766009160F9 /* GNBCell.xib */; };
+		6BAADE5121572C21009160F9 /* GNBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE5021572C21009160F9 /* GNBTransaction.swift */; };
+		6BAADE53215735AD009160F9 /* GNBBadgedBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE52215735AD009160F9 /* GNBBadgedBarButtonItem.swift */; };
+		6BAADE582159318B009160F9 /* GNBDetailTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAADE562159318B009160F9 /* GNBDetailTransactionViewController.swift */; };
+		6BAADE592159318B009160F9 /* GNBDetailTransactionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BAADE572159318B009160F9 /* GNBDetailTransactionViewController.xib */; };
+		6BC63C962159CB6900B7F8F6 /* GNBDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63C952159CB6900B7F8F6 /* GNBDetailPresenter.swift */; };
+		6BC63C982159CBD700B7F8F6 /* GNBDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63C972159CBD700B7F8F6 /* GNBDetailProtocol.swift */; };
+		6BC63C9B2159E85800B7F8F6 /* GNBTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63C992159E85800B7F8F6 /* GNBTransactionCell.swift */; };
+		6BC63C9C2159E85800B7F8F6 /* GNBTransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BC63C9A2159E85800B7F8F6 /* GNBTransactionCell.xib */; };
+		6BC63CA1215ABB6300B7F8F6 /* GNBTransactionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63CA0215ABB6300B7F8F6 /* GNBTransactionTest.swift */; };
+		6BC63CA3215ABFCC00B7F8F6 /* GNBRatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63CA2215ABFCC00B7F8F6 /* GNBRatesTest.swift */; };
+		6BC63CA6215B1A3000B7F8F6 /* GNBServicesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63CA5215B1A3000B7F8F6 /* GNBServicesTest.swift */; };
+		6BC63CA9215B222500B7F8F6 /* GNBMainViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63CA8215B222500B7F8F6 /* GNBMainViewControllerTest.swift */; };
+		6BC63CAB215B2E1200B7F8F6 /* GNBDetailTransactionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC63CAA215B2E1200B7F8F6 /* GNBDetailTransactionViewControllerTest.swift */; };
+		8DFE3F5D03D25B2974E61C02 /* Pods_GNBemobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 974D7FB6A60AE9E07B5B5F1A /* Pods_GNBemobileTests.framework */; };
+		D2A37047DC31846968DB71D0 /* Pods_GNBemobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A71C26A7945F434D50904FD /* Pods_GNBemobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BAADE2A21566D07009160F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BAADE0D21566D06009160F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BAADE1421566D06009160F9;
+			remoteInfo = GNBemobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A71C26A7945F434D50904FD /* Pods_GNBemobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBemobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F21F440B10E77F058CB3B83 /* Pods-GNBemobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBemobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNBemobile/Pods-GNBemobile.debug.xcconfig"; sourceTree = "<group>"; };
+		63398BD159135FEC252A34CA /* Pods-GNBemobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBemobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNBemobileTests/Pods-GNBemobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BAADE1521566D06009160F9 /* GNBemobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBemobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAADE1821566D06009160F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BAADE1F21566D07009160F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BAADE2221566D07009160F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BAADE2421566D07009160F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BAADE2921566D07009160F9 /* GNBemobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBemobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAADE2D21566D07009160F9 /* GNBemobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBemobileTests.swift; sourceTree = "<group>"; };
+		6BAADE2F21566D07009160F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BAADE3921566E33009160F9 /* GNBMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBMainViewController.swift; sourceTree = "<group>"; };
+		6BAADE3A21566E33009160F9 /* GNBMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GNBMainViewController.xib; sourceTree = "<group>"; };
+		6BAADE41215675A8009160F9 /* GNBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBServices.swift; sourceTree = "<group>"; };
+		6BAADE4321567953009160F9 /* GNBPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBPresenter.swift; sourceTree = "<group>"; };
+		6BAADE4521567A51009160F9 /* GNBProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBProtocol.swift; sourceTree = "<group>"; };
+		6BAADE4821567CE9009160F9 /* GNBRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBRates.swift; sourceTree = "<group>"; };
+		6BAADE4C21572766009160F9 /* GNBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBCell.swift; sourceTree = "<group>"; };
+		6BAADE4D21572766009160F9 /* GNBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GNBCell.xib; sourceTree = "<group>"; };
+		6BAADE5021572C21009160F9 /* GNBTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTransaction.swift; sourceTree = "<group>"; };
+		6BAADE52215735AD009160F9 /* GNBBadgedBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBBadgedBarButtonItem.swift; sourceTree = "<group>"; };
+		6BAADE562159318B009160F9 /* GNBDetailTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBDetailTransactionViewController.swift; sourceTree = "<group>"; };
+		6BAADE572159318B009160F9 /* GNBDetailTransactionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GNBDetailTransactionViewController.xib; sourceTree = "<group>"; };
+		6BC63C952159CB6900B7F8F6 /* GNBDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBDetailPresenter.swift; sourceTree = "<group>"; };
+		6BC63C972159CBD700B7F8F6 /* GNBDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBDetailProtocol.swift; sourceTree = "<group>"; };
+		6BC63C992159E85800B7F8F6 /* GNBTransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTransactionCell.swift; sourceTree = "<group>"; };
+		6BC63C9A2159E85800B7F8F6 /* GNBTransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GNBTransactionCell.xib; sourceTree = "<group>"; };
+		6BC63CA0215ABB6300B7F8F6 /* GNBTransactionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTransactionTest.swift; sourceTree = "<group>"; };
+		6BC63CA2215ABFCC00B7F8F6 /* GNBRatesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBRatesTest.swift; sourceTree = "<group>"; };
+		6BC63CA5215B1A3000B7F8F6 /* GNBServicesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBServicesTest.swift; sourceTree = "<group>"; };
+		6BC63CA8215B222500B7F8F6 /* GNBMainViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBMainViewControllerTest.swift; sourceTree = "<group>"; };
+		6BC63CAA215B2E1200B7F8F6 /* GNBDetailTransactionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBDetailTransactionViewControllerTest.swift; sourceTree = "<group>"; };
+		8D251DE63DEFFDD1E409D51C /* Pods-GNBemobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBemobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNBemobile/Pods-GNBemobile.release.xcconfig"; sourceTree = "<group>"; };
+		974D7FB6A60AE9E07B5B5F1A /* Pods_GNBemobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBemobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B616B4E91CE515A6E7E6CA22 /* Pods-GNBemobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBemobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNBemobileTests/Pods-GNBemobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BAADE1221566D06009160F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A37047DC31846968DB71D0 /* Pods_GNBemobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAADE2621566D07009160F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DFE3F5D03D25B2974E61C02 /* Pods_GNBemobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D253F051850B02DDAF86881 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F21F440B10E77F058CB3B83 /* Pods-GNBemobile.debug.xcconfig */,
+				8D251DE63DEFFDD1E409D51C /* Pods-GNBemobile.release.xcconfig */,
+				B616B4E91CE515A6E7E6CA22 /* Pods-GNBemobileTests.debug.xcconfig */,
+				63398BD159135FEC252A34CA /* Pods-GNBemobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BAADE0C21566D06009160F9 = {
+			isa = PBXGroup;
+			children = (
+				6BAADE1721566D06009160F9 /* GNBemobile */,
+				6BAADE2C21566D07009160F9 /* GNBemobileTests */,
+				6BAADE1621566D06009160F9 /* Products */,
+				0D253F051850B02DDAF86881 /* Pods */,
+				F9FD2EE17506FEF0673BCD7E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6BAADE1621566D06009160F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE1521566D06009160F9 /* GNBemobile.app */,
+				6BAADE2921566D07009160F9 /* GNBemobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BAADE1721566D06009160F9 /* GNBemobile */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE5E21595074009160F9 /* Common */,
+				6BAADE5D21595040009160F9 /* Main */,
+				6BAADE5421593161009160F9 /* Detail */,
+				6BAADE1821566D06009160F9 /* AppDelegate.swift */,
+				6BAADE1F21566D07009160F9 /* Assets.xcassets */,
+				6BAADE2121566D07009160F9 /* LaunchScreen.storyboard */,
+				6BAADE2421566D07009160F9 /* Info.plist */,
+			);
+			path = GNBemobile;
+			sourceTree = "<group>";
+		};
+		6BAADE2C21566D07009160F9 /* GNBemobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63CA7215B220F00B7F8F6 /* View */,
+				6BC63CA4215B1A2000B7F8F6 /* Services */,
+				6BC63C9F215ABB4900B7F8F6 /* DTO */,
+				6BAADE2D21566D07009160F9 /* GNBemobileTests.swift */,
+				6BAADE2F21566D07009160F9 /* Info.plist */,
+			);
+			path = GNBemobileTests;
+			sourceTree = "<group>";
+		};
+		6BAADE3821566E0C009160F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE3921566E33009160F9 /* GNBMainViewController.swift */,
+				6BAADE3A21566E33009160F9 /* GNBMainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BAADE3D21566EBF009160F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE41215675A8009160F9 /* GNBServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6BAADE3E21566EC2009160F9 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4821567CE9009160F9 /* GNBRates.swift */,
+				6BAADE5021572C21009160F9 /* GNBTransaction.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		6BAADE3F21566EC4009160F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4321567953009160F9 /* GNBPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6BAADE4021566EC7009160F9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4521567A51009160F9 /* GNBProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6BAADE4A21572742009160F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4B2157274A009160F9 /* Cell */,
+				6BAADE52215735AD009160F9 /* GNBBadgedBarButtonItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BAADE4B2157274A009160F9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4C21572766009160F9 /* GNBCell.swift */,
+				6BAADE4D21572766009160F9 /* GNBCell.xib */,
+				6BC63C992159E85800B7F8F6 /* GNBTransactionCell.swift */,
+				6BC63C9A2159E85800B7F8F6 /* GNBTransactionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BAADE5421593161009160F9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE5B2159501F009160F9 /* Protocol */,
+				6BAADE5A2159501C009160F9 /* Presenter */,
+				6BAADE5521593172009160F9 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6BAADE5521593172009160F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE562159318B009160F9 /* GNBDetailTransactionViewController.swift */,
+				6BAADE572159318B009160F9 /* GNBDetailTransactionViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BAADE5A2159501C009160F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63C952159CB6900B7F8F6 /* GNBDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6BAADE5B2159501F009160F9 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63C972159CBD700B7F8F6 /* GNBDetailProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6BAADE5D21595040009160F9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE3821566E0C009160F9 /* View */,
+				6BAADE4021566EC7009160F9 /* Protocol */,
+				6BAADE3F21566EC4009160F9 /* Presenter */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6BAADE5E21595074009160F9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6BAADE4A21572742009160F9 /* Views */,
+				6BAADE3E21566EC2009160F9 /* DTO */,
+				6BAADE3D21566EBF009160F9 /* Services */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6BC63C9F215ABB4900B7F8F6 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63CA0215ABB6300B7F8F6 /* GNBTransactionTest.swift */,
+				6BC63CA2215ABFCC00B7F8F6 /* GNBRatesTest.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		6BC63CA4215B1A2000B7F8F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63CA5215B1A3000B7F8F6 /* GNBServicesTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6BC63CA7215B220F00B7F8F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BC63CA8215B222500B7F8F6 /* GNBMainViewControllerTest.swift */,
+				6BC63CAA215B2E1200B7F8F6 /* GNBDetailTransactionViewControllerTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9FD2EE17506FEF0673BCD7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A71C26A7945F434D50904FD /* Pods_GNBemobile.framework */,
+				974D7FB6A60AE9E07B5B5F1A /* Pods_GNBemobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BAADE1421566D06009160F9 /* GNBemobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAADE3221566D07009160F9 /* Build configuration list for PBXNativeTarget "GNBemobile" */;
+			buildPhases = (
+				1D007C3A76DAADB9C384894F /* [CP] Check Pods Manifest.lock */,
+				6BAADE1121566D06009160F9 /* Sources */,
+				6BAADE1221566D06009160F9 /* Frameworks */,
+				6BAADE1321566D06009160F9 /* Resources */,
+				21A46EDB652AEEF4044C5A20 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNBemobile;
+			productName = GNBemobile;
+			productReference = 6BAADE1521566D06009160F9 /* GNBemobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BAADE2821566D07009160F9 /* GNBemobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BAADE3521566D07009160F9 /* Build configuration list for PBXNativeTarget "GNBemobileTests" */;
+			buildPhases = (
+				C776A2BD794C61EEE6193A33 /* [CP] Check Pods Manifest.lock */,
+				6BAADE2521566D07009160F9 /* Sources */,
+				6BAADE2621566D07009160F9 /* Frameworks */,
+				6BAADE2721566D07009160F9 /* Resources */,
+				510EC7D18F294965056CD7B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BAADE2B21566D07009160F9 /* PBXTargetDependency */,
+			);
+			name = GNBemobileTests;
+			productName = GNBemobileTests;
+			productReference = 6BAADE2921566D07009160F9 /* GNBemobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BAADE0D21566D06009160F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Josue Hernandez Gonzalez";
+				TargetAttributes = {
+					6BAADE1421566D06009160F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6BAADE2821566D07009160F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BAADE1421566D06009160F9;
+					};
+				};
+			};
+			buildConfigurationList = 6BAADE1021566D06009160F9 /* Build configuration list for PBXProject "GNBemobile" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BAADE0C21566D06009160F9;
+			productRefGroup = 6BAADE1621566D06009160F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BAADE1421566D06009160F9 /* GNBemobile */,
+				6BAADE2821566D07009160F9 /* GNBemobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BAADE1321566D06009160F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAADE2321566D07009160F9 /* LaunchScreen.storyboard in Resources */,
+				6BAADE2021566D07009160F9 /* Assets.xcassets in Resources */,
+				6BAADE3C21566E33009160F9 /* GNBMainViewController.xib in Resources */,
+				6BAADE4F21572766009160F9 /* GNBCell.xib in Resources */,
+				6BC63C9C2159E85800B7F8F6 /* GNBTransactionCell.xib in Resources */,
+				6BAADE592159318B009160F9 /* GNBDetailTransactionViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAADE2721566D07009160F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D007C3A76DAADB9C384894F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBemobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A46EDB652AEEF4044C5A20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNBemobile/Pods-GNBemobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JCore-ui/JCore_ui.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JCore_ui.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNBemobile/Pods-GNBemobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		510EC7D18F294965056CD7B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNBemobileTests/Pods-GNBemobileTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNBemobileTests/Pods-GNBemobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C776A2BD794C61EEE6193A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBemobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BAADE1121566D06009160F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAADE4421567953009160F9 /* GNBPresenter.swift in Sources */,
+				6BAADE4621567A51009160F9 /* GNBProtocol.swift in Sources */,
+				6BAADE42215675A8009160F9 /* GNBServices.swift in Sources */,
+				6BAADE1921566D06009160F9 /* AppDelegate.swift in Sources */,
+				6BAADE582159318B009160F9 /* GNBDetailTransactionViewController.swift in Sources */,
+				6BC63C962159CB6900B7F8F6 /* GNBDetailPresenter.swift in Sources */,
+				6BC63C982159CBD700B7F8F6 /* GNBDetailProtocol.swift in Sources */,
+				6BAADE5121572C21009160F9 /* GNBTransaction.swift in Sources */,
+				6BAADE3B21566E33009160F9 /* GNBMainViewController.swift in Sources */,
+				6BC63C9B2159E85800B7F8F6 /* GNBTransactionCell.swift in Sources */,
+				6BAADE4921567CE9009160F9 /* GNBRates.swift in Sources */,
+				6BAADE4E21572766009160F9 /* GNBCell.swift in Sources */,
+				6BAADE53215735AD009160F9 /* GNBBadgedBarButtonItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAADE2521566D07009160F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BAADE2E21566D07009160F9 /* GNBemobileTests.swift in Sources */,
+				6BC63CA1215ABB6300B7F8F6 /* GNBTransactionTest.swift in Sources */,
+				6BC63CAB215B2E1200B7F8F6 /* GNBDetailTransactionViewControllerTest.swift in Sources */,
+				6BC63CA9215B222500B7F8F6 /* GNBMainViewControllerTest.swift in Sources */,
+				6BC63CA3215ABFCC00B7F8F6 /* GNBRatesTest.swift in Sources */,
+				6BC63CA6215B1A3000B7F8F6 /* GNBServicesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BAADE2B21566D07009160F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BAADE1421566D06009160F9 /* GNBemobile */;
+			targetProxy = 6BAADE2A21566D07009160F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BAADE2121566D07009160F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BAADE2221566D07009160F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BAADE3021566D07009160F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BAADE3121566D07009160F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BAADE3321566D07009160F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F21F440B10E77F058CB3B83 /* Pods-GNBemobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GNBemobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jghg.GNBemobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BAADE3421566D07009160F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D251DE63DEFFDD1E409D51C /* Pods-GNBemobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GNBemobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jghg.GNBemobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6BAADE3621566D07009160F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B616B4E91CE515A6E7E6CA22 /* Pods-GNBemobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GNBemobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jghg.GNBemobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNBemobile.app/GNBemobile";
+			};
+			name = Debug;
+		};
+		6BAADE3721566D07009160F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63398BD159135FEC252A34CA /* Pods-GNBemobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GNBemobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jghg.GNBemobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNBemobile.app/GNBemobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BAADE1021566D06009160F9 /* Build configuration list for PBXProject "GNBemobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAADE3021566D07009160F9 /* Debug */,
+				6BAADE3121566D07009160F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAADE3221566D07009160F9 /* Build configuration list for PBXNativeTarget "GNBemobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAADE3321566D07009160F9 /* Debug */,
+				6BAADE3421566D07009160F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BAADE3521566D07009160F9 /* Build configuration list for PBXNativeTarget "GNBemobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BAADE3621566D07009160F9 /* Debug */,
+				6BAADE3721566D07009160F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BAADE0D21566D06009160F9 /* Project object */;
+}
