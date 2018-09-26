@@ -7,7 +7,7 @@ target 'GNBemobile' do
 
   # Pods for GNBemobile
   pod 'Alamofire'
-  pod 'JCore-ui', :path => '/Users/jhgonzalez/Desktop/MyApp/Me/cocoaPod/JCore-ui'
+  pod 'JCore-ui'
   pod 'SwiftyJSON'
 
   target 'GNBemobileTests' do
